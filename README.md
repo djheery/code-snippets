@@ -10,20 +10,21 @@ Below details the snippets in `javascript-snippets.code-snippets`
 
 Create a simple log statement (As taken from the initial snippets file)
 
-**Prefix**: `log`
+**Prefix**: `log`<br />
 **Example**: `console.log('');`
 
 ### Javascript Es6 Method
+
 Create an ES6 arrow method with comments formatted for the better comments extension.
 
-**Prefix**: `fconst`
+**Prefix**: `fconst`<br />
 **Example (without comments)**: `const foo = (bar) => {return bar}`
 
 ### IIFE App
 
 Create the boiler plate code for an immediatley invokable function (IIFE) for the app file of an MVC widget (Mainly used with squarespace embedded widgets)
 
-**Prefix**: `iife`
+**Prefix**: `iife`<br />
 
 **Example**:
 
@@ -44,7 +45,7 @@ SOME_APP.init()
 
 Create the boiler plate code for an immediatley invokable function (IIFE) for the UI file of an MVC widget (Mainly used with squarespace embedded widgets)
 
-**Prefix**: `uiife`
+**Prefix**: `uiife`<br />
 
 **Example**:
 
@@ -63,12 +64,11 @@ const SOME_UI = (() => {
 
 ```
 
-
 ### IIFE State
 
 Create the boiler plate code for an immediatley invokable function (IIFE) for the state file of an MVC widget (Mainly used with squarespace embedded widgets)
 
-**Prefix**: `siife`
+**Prefix**: `siife`<br />
 **Example**:
 
 ```
@@ -109,12 +109,12 @@ Create a return method when an object of methods is returned
 
 Below details the snippets in `react-snippets.code-snippets`
 
-### React Functional Component 
+### React Functional Component
 
-Create a react functional component for the given file name with a css module import for the file and comments formatted for the better comments extension. 
+Create a react functional component for the given file name with a css module import for the file and comments formatted for the better comments extension.
 
-**Prefix**: `rfce`
-**Example**: 
+**Prefix**: `rfce`<br />
+**Example**:
 
 ```
 import styles from './FileName.module.css'
@@ -132,10 +132,10 @@ export default FileName;
 
 ### React Functional Component with TypeScript
 
-Create a react functional component **with TypeScript** for the given file name with a css module import for the file and comments formatted for the better comments extension. 
+Create a react functional component **with TypeScript** for the given file name with a css module import for the file and comments formatted for the better comments extension.
 
-**Prefix**: `rfct`
-**Example**: 
+**Prefix**: `rfct`<br />
+**Example**:
 
 ```
 import styles from './FileName.module.css'
@@ -156,7 +156,7 @@ const FileName: React.FC<{children: React.PropsWithChildren}> = ({children}) => 
 export default FileName;
 ```
 
-## TypeScript 
+## TypeScript
 
 Below details the code snippets in `typescript-snippets.code-snippets`
 
@@ -164,59 +164,59 @@ Below details the code snippets in `typescript-snippets.code-snippets`
 
 Create an ES6 arrow method **with TypeScript** and comments formatted for the better comments extension.
 
-**Prefix**: `ftconst`
-**Example (without comments)**: 
+**Prefix**: `ftconst`<br />
+**Example (without comments)**:
 
 ```
-// Some comments formatted for better comments 
+// Some comments formatted for better comments
 
 const foo = (bar: string): string {
   return bar;
 }
 ```
 
-## Comment Snippets 
+## Comment Snippets
 
-All the comment snippets are made to work with the better comments extension 
+All the comment snippets are made to work with the better comments extension
 
-### TODO 
+### TODO
 
-Make a todo comment 
+Make a todo comment
 
-**Prefix**: `todo` 
+**Prefix**: `todo`<br />
 **Example**:
 
 ```
 // TODO: Something to do
 ```
 
-### Question 
+### Question
 
-Make a question comment 
+Make a question comment
 
-**Prefix**: `question` 
+**Prefix**: `question`<br />
 **Example**:
 
 ```
 // ? type your question here
 ```
 
-### Warning 
+### Warning
 
-Make a warning comment 
+Make a warning comment
 
-**Prefix**: `warning` 
+**Prefix**: `warning`<br />
 **Example**:
 
 ```
 // ! write your warning here
 ```
 
-### important 
+### important
 
-Make an important comment 
+Make an important comment
 
-**Prefix**: `important` 
+**Prefix**: `important`<br />
 **Example**:
 
 ```
