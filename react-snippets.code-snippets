@@ -3,7 +3,7 @@
       "scope": "javascriptreact,typescriptreact",
       "prefix": "rfce",
       "body": [
-          "import styles from '${TM_FILENAME_BASE:}.module.css;'\n",
+          "import styles from './${TM_FILENAME_BASE:}.module.css;'\n",
           "// TODO: Leave explicit comments",
           "// TODO: Create component content\n",
           "$BLOCK_COMMENT_START",

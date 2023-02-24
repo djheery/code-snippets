@@ -23,21 +23,6 @@
       ],
       "description": "Create an es6 method"
   },
-  "Typescript E6 React": {
-      "scope": "typescript,typescriptreact",
-      "prefix": "ftconst",
-      "body": [
-          "$BLOCK_COMMENT_START*",
-          " * A method for...",
-          " *",
-          " * @param myParam your params here",
-          " * @return What your method returns",
-          "$BLOCK_COMMENT_END\n",
-          "const ${1:foo} = (${2:bar}):string => {",
-          "\treturn 'bar';",
-          "}"
-      ]
-  },
   "IIFE App": {
       "scope": "javascript",
       "prefix": "iife",
@@ -103,9 +88,9 @@
           "})()\n",
       ]
   },
-  "IIFE method": {
+  "Return method": {
       "scope": "javascript",
-      "prefix": "miife",
+      "prefix": "rmethod",
       "body": [
           "${1:foo}: (${2:bar}) => {",
           "\treturn ${2:bar}",

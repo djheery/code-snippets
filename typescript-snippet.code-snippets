@@ -1,0 +1,17 @@
+{
+  "Typescript ES6 method": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "ftconst",
+    "body": [
+      "$BLOCK_COMMENT_START*",
+      " * A method for...",
+      " *",
+      " * @param myParam your params here",
+      " * @return What your method returns",
+      "$BLOCK_COMMENT_END\n",
+      "const ${1:foo} = (${2:bar}: string):string => {",
+      "\treturn bar;",
+      "}"
+    ]
+  }
+}
