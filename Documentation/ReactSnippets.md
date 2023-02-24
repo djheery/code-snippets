@@ -35,13 +35,10 @@ import styles from './FileName.module.css'
 
 // Comments....
 
-const FileName: React.FC<{children: React.PropsWithChildren}> = ({children}) => {
+const FileName: React.FC = () => {
   return (
     <div>
       <h1>File Name</h1>
-      <div>
-        {children}
-      </div>
     </div>
   )
 }
