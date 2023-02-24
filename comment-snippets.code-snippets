@@ -1,0 +1,42 @@
+{
+  "TODO": {
+      "scope": "javascript,javascriptreact,typescript,typescriptreact",
+      "prefix": "todo",
+      "body": [
+          "// TODO: ${1:Something todo...}"
+      ]
+  },
+  "Question": {
+      "scope": "javascript,javascriptreact,typescript,typescriptreact",
+      "prefix": "question",
+      "body": [
+          "// ? ${1:type your question}"
+      ]
+  },
+  "Warning": {
+      "scope": "javascript,javascriptreact,typescript,typescriptreact",
+      "prefix": "warning",
+      "body": [
+          "// ! ${1: this is a warning}"
+      ]
+  },
+  "important": {
+      "scope": "javascript,javascriptreact,typescript,typescriptreact",
+      "prefix": "important",
+      "body": [
+          "// * ${1: this is important}"
+      ]
+  },
+  "method comment": {
+      "scope": "javascript,javascriptreact,typescript,typescriptreact",
+      "prefix": "mcom",
+      "body": [
+          "$BLOCK_COMMENT_START*",
+          " * ${1:This is a method comment}",
+          " *",
+          " ${2:* @param paramName this is my param}",
+          " ${3:* @return this is what my method returns}",
+          "$BLOCK_COMMENT_END"
+      ]
+  },
+}

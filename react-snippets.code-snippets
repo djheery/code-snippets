@@ -1,0 +1,50 @@
+{
+  "React Functional Component": {
+      "scope": "javascriptreact,typescriptreact",
+      "prefix": "rfce",
+      "body": [
+          "import styles from '${TM_FILENAME_BASE:}.module.css;'\n",
+          "// TODO: Leave explicit comments",
+          "// TODO: Create component content\n",
+          "$BLOCK_COMMENT_START",
+          " * The functional component for ${TM_FILENAME_BASE}",
+          " *",
+          " * @param myParam your params here",
+          "$BLOCK_COMMENT_END\n",
+          "const ${TM_FILENAME_BASE} = (props) => {",
+          "\treturn (",
+          "\t\t<div>${TM_FILENAME_BASE}</div>",
+          "\t)",
+          "}\n",
+          "export default ${TM_FILENAME_BASE};",
+      ],
+      "description": "Create a react functional component for the given file name"
+  },
+  "React Functional Component w/typescript": {
+      "scope": "typescriptreact",
+      "prefix": "rfct",
+      "body": [
+          "import styles from '${TM_FILENAME_BASE:}.module.css';\n",
+          "// TODO: Leave explicit comments",
+          "// TODO: Create component content\n",
+          "$BLOCK_COMMENT_START*",
+          " * The functional component for ${TM_FILENAME_BASE}",
+          " *",
+          " * @param myParam your params here",
+          "$BLOCK_COMMENT_END\n",
+          "const ${TM_FILENAME_BASE}: React.FC<{children: React.PropsWithChildren}> = ({children}) => {",
+          "\treturn (",
+          "\t\t<div>",
+          "\t\t\t<h1>${TM_FILENAME_BASE}</h1>",
+          "\t\t\t<div>",
+          "\t\t\t\t{children}",
+          "\t\t\t</div>",
+          "\t\t</div>",
+          "\t)",
+          "}\n",
+          "export default ${TM_FILENAME_BASE};",
+      ],
+      "description": "Create a react functional component with typescript for the given file name"
+  },
+  
+}
