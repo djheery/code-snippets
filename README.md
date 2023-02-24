@@ -89,11 +89,11 @@ const SOME_STATE = (() => {
 
 ```
 
-### Return Method
+### Return Method in Object
 
 Create a return method when an object of methods is returned
 
-**Prefix** rmethod
+**Prefix**: rmethod<br/>
 **Example**
 
 ```
