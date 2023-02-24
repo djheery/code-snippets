@@ -4,9 +4,9 @@ These are some of my custom code snippets. Below are the relative links to the d
 
 **Note** - ***All comments are formatted for the better comments extension** 
 
-- [a relative link](/Documentation/JavaScriptSnippets.md)
-- [a relative link](/Documentation/TypeScriptSnippets.md)
-- [a relative link](/Documentation/ReactSnippets.md)
-- [a relative link](/Documentation/CommentSnippets.md)
+- [Javascript Snippets](/Documentation/JavaScriptSnippets.md)
+- [TypeScript Snippets](/Documentation/TypeScriptSnippets.md)
+- [React Snippets](/Documentation/ReactSnippets.md)
+- [Comment Snippets](/Documentation/CommentSnippets.md)
 
 
