@@ -45,3 +45,26 @@ const FileName: React.FC = () => {
 
 export default FileName;
 ```
+
+## React Page Component with TypeScript
+
+Create a react page component **with TypeScript** the file name is not automatically entered thus you will be automatically highlighted over the `PageName` placeholder to replace this text with the name of the page. This is because it is assumed that your page name will be the folder name and the file will be called index.tsx
+
+**Prefix**: `rpgt`<br />
+**Example**:
+
+```
+import styles from './index.module.css'
+
+// Comments....
+
+const PageName: React.FC = () => {
+  return (
+    <div>
+      <h1>Page Name</h1>
+    </div>
+  )
+}
+
+export default PageName;
+```

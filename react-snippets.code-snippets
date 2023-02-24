@@ -42,5 +42,28 @@
       "export default ${TM_FILENAME_BASE};"
     ],
     "description": "Create a react functional component with typescript for the given file name"
+  },
+  "React Page w/typescript and Folder name for Method Name": {
+    "scope": "typescriptreact",
+    "prefix": "rpgt",
+    "body": [
+      "import styles from './${TM_FILENAME_BASE:}.module.css';\n",
+      "// TODO: Leave explicit comments",
+      "// TODO: Create component content\n",
+      "$BLOCK_COMMENT_START*",
+      " * The functional component for ${TM_FILENAME_BASE}",
+      " *",
+      " * @param myParam your params here",
+      "$BLOCK_COMMENT_END\n",
+      "const ${1:PageName}: React.FC = () => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t<h1>${1:PageName}</h1>",
+      "\t\t</div>",
+      "\t)",
+      "}\n",
+      "export default ${1:PageName};"
+    ],
+    "description": "Create a react functional component with typescript for the given file name"
   }
 }
