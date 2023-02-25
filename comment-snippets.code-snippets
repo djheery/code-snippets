@@ -39,7 +39,7 @@
           "$BLOCK_COMMENT_END"
       ]
   },
-  "interface comment": {
+  "TypeScript Interface Comment": {
     "scope": "typescript,typescriptreact",
     "prefix": "_icom",
     "body": [
