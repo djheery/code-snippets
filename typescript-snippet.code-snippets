@@ -1,7 +1,7 @@
 {
   "Typescript ES6 method": {
     "scope": "typescript,typescriptreact",
-    "prefix": "ftconst",
+    "prefix": "_ftconst",
     "body": [
       "$BLOCK_COMMENT_START*",
       " * A method for...",
@@ -12,7 +12,80 @@
       "const ${1:foo} = (${2:bar}: string):string => {",
       "\treturn bar;",
       "}"
-    ]
+    ],
+    "description": "Quickly creates a ES6 arrow function with TypeScript"
   },
-  
+  "TypeScript Interface Setup": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "_tinter",
+    "body": [
+      "$BLOCK_COMMENT_START*",
+      " * ${4:An interface that details...}",
+      " *",
+      " * @param ${5:interfaceParam} ${6:This param represents...}",
+      "$BLOCK_COMMENT_END",
+      "",
+      "export interface ${1:InterfaceName} {",
+      "\t${2:foo: string[]},",
+      "\t${3:bar: number,}",
+      "}"
+    ],
+    "description": "Quickly setup the outlines of a TypeScript Interface"
+  },
+  "TypeScript Enum Setup": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "_tenum",
+    "body": [
+      "$BLOCK_COMMENT_START*",
+      " * ${6:An enum that details...}",
+      "$BLOCK_COMMENT_END",
+      "",
+      "export enum ${1:EnumName} {",
+      "\t${2:LEFT} = ${3:\"LEFT\"},",
+      "\t${4:RIGHT} = ${5:\"RIGHT\"},",
+      "}"
+    ],
+    "description": "Quickly setup the outlines of a TypeScript Enum"
+  },
+  "TypeScript Type Setup": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "_typ",
+    "body": [
+      "$BLOCK_COMMENT_START*",
+      " * ${3:A type for...}",
+      " *",
+      "$BLOCK_COMMENT_END",
+      "",
+      "export type ${1:TypeName} = ${2:'Type to set'}"
+    ],
+    "description": "Quick TypeScript type definition with comments"
+  },
+  "TypeScript Union Type Setup": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "_unityp",
+    "body": [
+      "$BLOCK_COMMENT_START*",
+      " * ${4:A union type for...}",
+      " *",
+      "$BLOCK_COMMENT_END",
+      "",
+      "export type ${1:TypeName} = ${2:type1} | ${3:type2}"
+    ],
+    "description": "Quick TypeScript union type definition with comments"
+  },
+  "TypeScript Enum Type": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "_enutyp",
+    "body": [
+      "$BLOCK_COMMENT_START*",
+      " * ${5:A enum type for...}",
+      " *",
+      "$BLOCK_COMMENT_END",
+      "",
+      "export type ${1:TypeName} = ",
+      "\t\t\t\t\t\t\t\t\t\t| ${2:EnumName}.${3:LEFT}",
+      "\t\t\t\t\t\t\t\t\t\t| ${2:EnumName}.${4:RIGHT}"
+    ],
+    "description": "Quickly create an enum type"
+  }
 }

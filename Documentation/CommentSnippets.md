@@ -64,7 +64,7 @@ Build the outline of a method comment
 
 ## Interface Comment 
 
-Build the outline of a `typescript` interface.
+Build the outline of a `typescript` interface comment.
 
 **Prefix**: _icom<br/>
 **Example**: 
@@ -75,6 +75,17 @@ Build the outline of a `typescript` interface.
   *
   * @param interfaceParam This is param represents...
   * @returns This method returns... (fully highlighted if wanting to delete)
+  */
+```
+
+## Type Comment 
+
+Build the outline of a `typescript` type comment 
+
+```
+/**
+  * A type for...
+  *
   */
 ```
 

@@ -1,28 +1,28 @@
 {
   "TODO": {
       "scope": "javascript,javascriptreact,typescript,typescriptreact",
-      "prefix": "todo",
+      "prefix": "_todo",
       "body": [
           "// TODO: ${1:Something todo...}"
       ]
   },
   "Question": {
       "scope": "javascript,javascriptreact,typescript,typescriptreact",
-      "prefix": "question",
+      "prefix": "_qcom",
       "body": [
           "// ? ${1:type your question}"
       ]
   },
   "Warning": {
       "scope": "javascript,javascriptreact,typescript,typescriptreact",
-      "prefix": "warning",
+      "prefix": "_warncom",
       "body": [
           "// ! ${1: this is a warning}"
       ]
   },
   "important": {
       "scope": "javascript,javascriptreact,typescript,typescriptreact",
-      "prefix": "important",
+      "prefix": "_impcom",
       "body": [
           "// * ${1: this is important}"
       ]
@@ -48,6 +48,16 @@
       " *",
       " * @param ${2:interfaceParam} ${3:This param represents...}",
       "$BLOCK_COMMENT_END"
+    ]
+  },
+  "TypeScript type Comment": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "_typcom",
+    "body": [
+      "$BLOCK_COMMENT_START*",
+      " * ${1:A type for...}",
+      " *",
+      "$BLOCK_COMMENT_END",
     ]
   },
   "Comment Block Parameter": {
