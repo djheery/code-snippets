@@ -16,7 +16,9 @@ import styles from './FileName.module.css'
 
 const FileName = (props) => {
   return (
-    <div>FileName</div>
+    <div>
+      FileName Component
+    </div>
   )
 }
 
@@ -61,7 +63,9 @@ import styles from './FileName.module.css'
 const FileName: React.FC = () => {
   return (
     <div>
-      <h1>File Name</h1>
+      <div>
+        File Name Component
+      </div>
     </div>
   )
 }
@@ -90,4 +94,23 @@ const PageName: React.FC = () => {
 }
 
 export default PageName;
+```
+
+## JSX Div Element With ClassName field
+
+Create a jsx div with the `className` field. The `className` field will automatically be highlighted to add the class.
+
+**Prefix**: \_cdiv<br/>
+**Example**:
+
+```
+/*
+  Inside the return statement of a react functional or page component. everything after the return statement is the output of the snippet
+*/
+
+return (
+  <div className={styles["className"]}>
+
+  </div>
+)
 ```
