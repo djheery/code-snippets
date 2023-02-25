@@ -29,7 +29,7 @@
   },
   "method comment": {
       "scope": "javascript,javascriptreact,typescript,typescriptreact",
-      "prefix": "mcom",
+      "prefix": "_mcom",
       "body": [
           "$BLOCK_COMMENT_START*",
           " * ${1:This is a method comment}",
@@ -39,4 +39,25 @@
           "$BLOCK_COMMENT_END"
       ]
   },
+  "interface comment": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "_icom",
+    "body": [
+      "$BLOCK_COMMENT_START*",
+      " * ${1:An interface that details...}",
+      " *",
+      " ${2:* @param interfaceParam InterfaceParam}",
+      "$BLOCK_COMMENT_END"
+    ]
+  },
+  "Comment Block Parameter": {
+    "scope": "typescript,javascript,javascriptreact,typescriptreact",
+    "prefix": "_pbcom",
+    "body": "@param ${1:paramName} ${2:Param Description...}"
+  },
+  "Comment Block Returns": {
+    "scope": "typescript,javascript,javascriptreact,typescriptreact",
+    "prefix": "_rbcom",
+    "body": "@returns ${1:this method returns...}"
+  }
 }
