@@ -32,10 +32,10 @@
       "prefix": "_mcom",
       "body": [
           "$BLOCK_COMMENT_START*",
-          " * ${1:This is a method comment}",
+          " * ${1:Describe your method...}",
           " *",
-          " ${2:* @param paramName this is my param}",
-          " ${3:* @return this is what my method returns}",
+          " * @param ${2:paramName} ${3:This param represents...}",
+          " * ${3:@returns This method returns...}",
           "$BLOCK_COMMENT_END"
       ]
   },
@@ -46,7 +46,7 @@
       "$BLOCK_COMMENT_START*",
       " * ${1:An interface that details...}",
       " *",
-      " ${2:* @param interfaceParam InterfaceParam}",
+      " * @param ${2:interfaceParam} ${3:This param represents...}",
       "$BLOCK_COMMENT_END"
     ]
   },
