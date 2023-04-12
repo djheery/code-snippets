@@ -1,100 +1,103 @@
 {
   "Print to console": {
-      "scope": "javascript,typescript",
-      "prefix": "log",
-      "body": [
-          "console.log('$1');",
-          "$2"
-      ],
-      "description": "Log output to console"
+    "scope": "javascript,typescript",
+    "prefix": "log",
+    "body": ["console.log('$1');", "$2"],
+    "description": "Log output to console"
   },
   "Javascript ES6 Method": {
-      "scope": "javascript,javascriptreact",
-      "prefix": "fconst",
-      "body": [
-          "$BLOCK_COMMENT_START*",
-          " * A method for...",
-          " *",
-          " * @param myParam your params here",
-          "$BLOCK_COMMENT_END\n",
-          "const ${1:foo} = (${2:bar}) => {",
-          "\treturn;",
-          "}"
-      ],
-      "description": "Create an es6 method"
+    "scope": "javascript,javascriptreact",
+    "prefix": "fconst",
+    "body": [
+      "$BLOCK_COMMENT_START*",
+      " * A method for...",
+      " *",
+      " * @param myParam your params here",
+      "$BLOCK_COMMENT_END\n",
+      "const ${1:foo} = (${2:bar}) => {",
+      "\treturn;",
+      "}"
+    ],
+    "description": "Create an es6 method"
   },
   "IIFE App": {
-      "scope": "javascript",
-      "prefix": "iife",
-      "body": [
-          "const ${TM_FILENAME_BASE/([^\\-]*)(\\-)*/${1:/upcase}${2:+_}/g}_APP = (() => {",
-          "\tconst ui = ${TM_FILENAME_BASE/([^\\-]*)(\\-)*/${1:/upcase}${2:+_}/g}_UI;",
-          "\tconst state = ${TM_FILENAME_BASE/([^\\-]*)(\\-)*/${1:/upcase}${2:+_}/g}_STATE;\n",
-          "\tconst loadEventListeners = () => {",
-          "\t\t// Load some event listeners",
-          "\t}",
-          "\t",
-          "\tconst removeEventListeners = () => {",
-          "\t\t// remove the event listeners on unmount",
-          "\t}",
-          "\t",
-          "\treturn {",
-          "\t\tmount: () => {",
-          "\t\t\tconsole.log(\"initializing...\");",
-          "\t\t\tloadEventListeners();",
-          "\t\t},",
-          "\t\tunmount: () => {",
-          "\t\t\tremoveEventListeners();",
-          "\t\t},",
-          "\t}",
-          "})()\n",
-          "${TM_FILENAME_BASE/([^\\-]*)(\\-)*/${1:/upcase}${2:+_}/g}_APP.init();"
-      ]
+    "scope": "javascript",
+    "prefix": "iife",
+    "body": [
+      "const ${TM_FILENAME_BASE/([^\\-]*)(\\-)*/${1:/upcase}${2:+_}/g}_APP = (() => {",
+      "\tconst ui = ${TM_FILENAME_BASE/([^\\-]*)(\\-)*/${1:/upcase}${2:+_}/g}_UI;",
+      "\tconst state = ${TM_FILENAME_BASE/([^\\-]*)(\\-)*/${1:/upcase}${2:+_}/g}_STATE;\n",
+      "\tconst loadEventListeners = () => {",
+      "\t\t// Load some event listeners",
+      "\t}",
+      "\t",
+      "\tconst removeEventListeners = () => {",
+      "\t\t// remove the event listeners on unmount",
+      "\t}",
+      "\t",
+      "\treturn {",
+      "\t\tmount: () => {",
+      "\t\t\tconsole.log(\"initializing...\");",
+      "\t\t\tloadEventListeners();",
+      "\t\t},",
+      "\t\tunmount: () => {",
+      "\t\t\tremoveEventListeners();",
+      "\t\t},",
+      "\t}",
+      "})()\n",
+      "${TM_FILENAME_BASE/([^\\-]*)(\\-)*/${1:/upcase}${2:+_}/g}_APP.init();"
+    ]
   },
   "IIFE UI": {
-      "scope": "javascript",
-      "prefix": "uiife",
-      "body": [
-          "const ${TM_FILENAME_BASE/([^\\-]*)(\\-)*/${1:/upcase}${2:+_}/g} = (() => {",
-          "\t",
-          "\tconst selectors = {",
-          "\t\tbtn: document.querySelector(\".btn\")",
-          "\t}",
-          "\t",
-          "\treturn {",
-          "\t\tgetSelectors: () => {",
-          "\t\t\treturn selectors;",
-          "\t\t},",
-          "\t}",
-          "})()\n",
-      ]
+    "scope": "javascript",
+    "prefix": "uiife",
+    "body": [
+      "const ${TM_FILENAME_BASE/([^\\-]*)(\\-)*/${1:/upcase}${2:+_}/g} = (() => {",
+      "\t",
+      "\tconst selectors = {",
+      "\t\tbtn: document.querySelector(\".btn\")",
+      "\t}",
+      "\t",
+      "\treturn {",
+      "\t\tgetSelectors: () => {",
+      "\t\t\treturn selectors;",
+      "\t\t},",
+      "\t}",
+      "})()\n"
+    ]
   },
   "IIFE state": {
-      "scope": "javascript",
-      "prefix": "siife",
-      "body": [
-          "const ${TM_FILENAME_BASE/([^\\-]*)(\\-)*/${1:/upcase}${2:+_}/g} = (() => {",
-          "\t",
-          "\tconst state = {}",
-          "\t",
-          "\treturn {",
-          "\t\tgetState: () => {",
-          "\t\t\treturn state;",
-          "\t\t},",
-          "\t\tsetState: () => {",
-          "\t\t\tstate.isActive = !state.isActive;",
-          "\t\t},",
-          "\t}",
-          "})()\n",
-      ]
+    "scope": "javascript",
+    "prefix": "siife",
+    "body": [
+      "const ${TM_FILENAME_BASE/([^\\-]*)(\\-)*/${1:/upcase}${2:+_}/g} = (() => {",
+      "\t",
+      "\tconst state = {}",
+      "\t",
+      "\treturn {",
+      "\t\tgetState: () => {",
+      "\t\t\treturn state;",
+      "\t\t},",
+      "\t\tsetState: () => {",
+      "\t\t\tstate.isActive = !state.isActive;",
+      "\t\t},",
+      "\t}",
+      "})()\n"
+    ]
   },
   "Return method": {
-      "scope": "javascript",
-      "prefix": "rmethod",
-      "body": [
-          "${1:foo}: (${2:bar}) => {",
-          "\treturn ${2:bar}",
-          "}"
-      ]
+    "scope": "javascript",
+    "prefix": "rmethod",
+    "body": ["${1:foo}: (${2:bar}) => {", "\treturn ${2:bar}", "}"]
   },
+  "Key Value Pair for an Object": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "_keval",
+    "body": "${1:foo}: \"${2:bar}\","
+  },
+  "Key Value Pair for an Object Uppercase Key": {
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+    "prefix": "_ukeval",
+    "body": "${1:FOO}: \"${2:bar}\","
+  }
 }

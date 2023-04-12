@@ -53,7 +53,7 @@
       "// TODO: Leave explicit comments",
       "// TODO: Create component content\n",
       "$BLOCK_COMMENT_START*",
-      " * The functional component for the ${1:FunctionalComponentName}",
+      " * The functional component for the ${TM_FILENAME_BASE} Component",
       " *",
       " * @param myParam your params here",
       "$BLOCK_COMMENT_END\n",

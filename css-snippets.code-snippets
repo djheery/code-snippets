@@ -1,0 +1,28 @@
+{
+  "React ClassName Construction": {
+    "scope": "css,cssmodules",
+    "prefix": "_cclas",
+    "body": [
+      ".${TM_FILENAME_BASE/(.*)([\\a-z])(?=[\\A-Z])([\\A-Z*])/${1:/downcase}${2}${2:+-}${3:/downcase}/g}__${1:outer} {",
+      "\t",
+      "}"
+    ]
+  },
+  "React Module Class Name Contructions": {
+    "prefix": "_crclas",
+    "body": [
+      ".${TM_FILENAME_BASE/([\\a-z])(?=[\\A-Z])([\\.][a-z]*)/${1}${1:+-}/g}${1:outer} {",
+      "\t",
+      "}"
+    ]
+  },
+
+  "Remove Module Class Test Name Contructions": {
+    "prefix": "_testclas",
+    "body": [
+      ".${TM_FILENAME_BASE/(.*)([\\.][\\a-z]*)/${1:/downcase}${2:__}/g}${1:outer} {",
+      "\t",
+      "}"
+    ]
+  }
+}
