@@ -50,10 +50,8 @@
     "prefix": "rfct",
     "body": [
       "import styles from './${TM_FILENAME_BASE}.module.css';\n",
-      "// TODO: Leave explicit comments",
-      "// TODO: Create component content\n",
       "$BLOCK_COMMENT_START*",
-      " * The functional component for the ${TM_FILENAME_BASE} Component",
+      " * The functional component for the ${TM_FILENAME_BASE}",
       " *",
       " * @param myParam your params here",
       "$BLOCK_COMMENT_END\n",
@@ -73,8 +71,6 @@
     "prefix": "rpgt",
     "body": [
       "import styles from './${TM_FILENAME_BASE}.module.css';\n",
-      "// TODO: Leave explicit comments",
-      "// TODO: Create component content\n",
       "$BLOCK_COMMENT_START*",
       " * The page component for ${2:PageName}",
       "$BLOCK_COMMENT_END\n",

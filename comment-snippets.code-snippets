@@ -35,7 +35,7 @@
           " * ${1:Describe your method...}",
           " *",
           " * @param ${2:paramName} ${3:This param represents...}",
-          " * ${3:@returns This method returns...}",
+          " * @returns ${4:This method returns...}",
           "$BLOCK_COMMENT_END"
       ]
   },
@@ -56,7 +56,6 @@
     "body": [
       "$BLOCK_COMMENT_START*",
       " * ${1:A type for...}",
-      " *",
       "$BLOCK_COMMENT_END",
     ]
   },
